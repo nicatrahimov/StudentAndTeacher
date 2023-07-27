@@ -11,7 +11,7 @@ public class Student extends AbstractModel {
     private String mail;
 
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
@@ -58,13 +58,5 @@ public class Student extends AbstractModel {
                 ", created=" + created +
                 ", state=" + state +
                 '}';
-    }
-
-    public void setMail(String mail) {
-        Pattern pattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(mail);
-        if (matcher.matches()) {
-            this.mail = mail;
-        }
     }
 }

@@ -25,6 +25,7 @@ public class StudentRepository implements StudentRepositoryINT {
         while (rs.next()) {
             student.setName(rs.getString("name"));
             student.setSurname(rs.getString("surname"));
+            student.setId(rs.getInt("id"));
             student.setAddress(rs.getString("address"));
             student.setMail(rs.getString("mail"));
             student.setCreatedAt(rs.getTimestamp("created").toLocalDateTime());

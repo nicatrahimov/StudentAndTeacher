@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbccf26c-28d5-4596-9ae4-784e918969ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentAndTeacher.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/config/DBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/enums/StateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/StateDoesNotEligible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepositoryINT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/service/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/sql.sql" afterDir="false" />
+    <list default="true" id="cbccf26c-28d5-4596-9ae4-784e918969ca" name="Changes" comment="a">
+      <change afterPath="$PROJECT_DIR$/src/az/coders/dto/StudentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/MailDoesntAccesible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/model/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/service/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +89,17 @@
       <workItem from="1689873272157" duration="379000" />
       <workItem from="1690024810544" duration="4180000" />
       <workItem from="1690298266399" duration="10000" />
-      <workItem from="1690475715946" duration="2836000" />
+      <workItem from="1690475715946" duration="3973000" />
+      <workItem from="1690492374059" duration="526000" />
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1690478858794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690478858794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +115,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
