@@ -34,13 +34,13 @@ public class AbstractModel {
     }
 
     public void setMail(String mail) {
+     if (checkMail(mail)){
+         this.mail=mail;
+     }
+    }
+    public boolean checkMail(String mail){
         Pattern pattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(mail);
-        if (matcher.matches()) {
-            this.mail = mail;
-        }
-        else {
-            throw new MailDoesntAccesible();
-        }
+        return matcher.matches();
     }
 }

@@ -8,9 +8,6 @@ public class Student extends AbstractModel {
     private String name;
     private String surname;
     private String address;
-    private String mail;
-
-
     public int getId() {
         return id;
     }
