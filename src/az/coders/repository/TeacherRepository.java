@@ -39,7 +39,7 @@ public class TeacherRepository implements TeacherRepositoryINT {
     }
 
 
-    public Teacher addTeacher() throws SQLException {
+    public void addTeacher() throws SQLException {
         Teacher teacher = createTeacher();
         PreparedStatement ps = connection.prepareStatement("insert into teacher(name,surname,address,mail,created,state) VALUES (?,?,?,?,?,?)");
         ps.setString(1,teacher.getName());
@@ -51,7 +51,6 @@ public class TeacherRepository implements TeacherRepositoryINT {
         int counter = ps.executeUpdate();
         if (counter>0){
             System.out.println("Muellim ugurla elave edildi");
-            return teacher;
         }else throw new TeacherCannotAdd();
 
     }

@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbccf26c-28d5-4596-9ae4-784e918969ca" name="Changes" comment="b">
-      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/StudentCannotAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/TeacherCannotAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/service/InterfaceLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/coders/model/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/coders/repository/GroupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/coders/repository/GroupRepositoryINT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/repository/StudentRepositoryINT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepositoryINT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepositoryINT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepositoryINT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/service/InterfaceLogin.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/service/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/coders/StudentAndTeacher",
     "node.js.detected.package.eslint": "true",
@@ -104,7 +105,7 @@
       <workItem from="1690648104605" duration="207000" />
       <workItem from="1690648385932" duration="61000" />
       <workItem from="1690710739306" duration="11000" />
-      <workItem from="1690710829865" duration="4743000" />
+      <workItem from="1690710829865" duration="8228000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1690478858794</created>
@@ -127,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690498689294</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="b">
+      <created>1690726210476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690726210476</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,6 @@
 package az.coders.repository;
 
+import az.coders.config.DBConfig;
 import az.coders.enums.StateEnum;
 import az.coders.exceptions.IDNotFound;
 import az.coders.exceptions.StudentCannotAdd;
@@ -10,11 +11,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StudentRepository implements StudentRepositoryINT {
 
     private final Connection connection;
+    private ArrayList<Student>  students;
 
     public StudentRepository(Connection connection) throws SQLException {
         this.connection = connection;
@@ -40,7 +43,9 @@ public class StudentRepository implements StudentRepositoryINT {
         return student;
     }
 
-    public Student addStudent() throws SQLException {
+
+
+    public void addStudent() throws SQLException {
         Student student = createStudent();
         PreparedStatement ps = connection.prepareStatement("insert into student(name,surname,address,mail,created,state) VALUES(?,?,?,?,?,?)");
         ps.setString(1, student.getName());
@@ -52,7 +57,6 @@ public class StudentRepository implements StudentRepositoryINT {
         int ff = ps.executeUpdate();
         if (ff > 0) {
             System.out.println("Sagird ugurla qeydiyyatdan kecirildi");
-            return student;
         } else throw new StudentCannotAdd();
     }
 
@@ -67,13 +71,13 @@ public class StudentRepository implements StudentRepositoryINT {
         String address = sc.nextLine();
         System.out.println("Mailinizi qeyd edin");
         String mail = sc.nextLine();
+
         student.setName(name);
         student.setSurname(surname);
         student.setMail(mail);
         student.setCreatedAt(LocalDateTime.now());
         student.setState(StateEnum.ONLINE);
         student.setAddress(address);
-        System.out.println(student);
 
         return student;
     }
