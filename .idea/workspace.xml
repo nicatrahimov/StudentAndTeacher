@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbccf26c-28d5-4596-9ae4-784e918969ca" name="Changes" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/IDNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepositoryINT.java" afterDir="false" />
+    <list default="true" id="cbccf26c-28d5-4596-9ae4-784e918969ca" name="Changes" comment="b">
+      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/StudentCannotAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/coders/exceptions/TeacherCannotAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/az/coders/service/InterfaceLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/model/AbstractModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/az/coders/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/repository/StudentRepositoryINT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/StudentRepositoryINT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepositoryINT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/repository/TeacherRepositoryINT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/az/coders/service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/az/coders/service/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,19 +41,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/coders/StudentAndTeacher",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="az.coders.service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\coders\NijatRahimov2\StudentAndTeacher\src\az\coders" />
     </key>
@@ -91,7 +98,13 @@
       <workItem from="1690298266399" duration="10000" />
       <workItem from="1690475715946" duration="3973000" />
       <workItem from="1690492374059" duration="2781000" />
-      <workItem from="1690495210219" duration="3183000" />
+      <workItem from="1690495210219" duration="3533000" />
+      <workItem from="1690531566104" duration="755000" />
+      <workItem from="1690637500908" duration="183000" />
+      <workItem from="1690648104605" duration="207000" />
+      <workItem from="1690648385932" duration="61000" />
+      <workItem from="1690710739306" duration="11000" />
+      <workItem from="1690710829865" duration="4743000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1690478858794</created>
@@ -107,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690493098357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="b">
+      <created>1690498689294</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690498689294</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +152,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="b" />
+    <option name="LAST_COMMIT_MESSAGE" value="b" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

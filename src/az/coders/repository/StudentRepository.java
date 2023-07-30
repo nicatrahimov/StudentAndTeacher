@@ -2,6 +2,7 @@ package az.coders.repository;
 
 import az.coders.enums.StateEnum;
 import az.coders.exceptions.IDNotFound;
+import az.coders.exceptions.StudentCannotAdd;
 import az.coders.model.Student;
 
 import java.sql.Connection;
@@ -39,7 +40,7 @@ public class StudentRepository implements StudentRepositoryINT {
         return student;
     }
 
-    public void addStudent() throws SQLException {
+    public Student addStudent() throws SQLException {
         Student student = createStudent();
         PreparedStatement ps = connection.prepareStatement("insert into student(name,surname,address,mail,created,state) VALUES(?,?,?,?,?,?)");
         ps.setString(1, student.getName());
@@ -51,7 +52,8 @@ public class StudentRepository implements StudentRepositoryINT {
         int ff = ps.executeUpdate();
         if (ff > 0) {
             System.out.println("Sagird ugurla qeydiyyatdan kecirildi");
-        } else System.out.println("Zehmet olmasa yeniden cehd edin.");
+            return student;
+        } else throw new StudentCannotAdd();
     }
 
     private Student createStudent() {

@@ -1,13 +1,10 @@
 package az.coders.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.AbstractCollection;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import az.coders.enums.*;
-import az.coders.exceptions.MailDoesntAccesible;
 
 public class AbstractModel {
 
@@ -43,4 +40,5 @@ public class AbstractModel {
         Matcher matcher = pattern.matcher(mail);
         return matcher.matches();
     }
+
 }

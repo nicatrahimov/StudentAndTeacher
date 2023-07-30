@@ -6,4 +6,6 @@ import java.sql.SQLException;
 
 public interface StudentRepositoryINT {
     Student getStudentById(int id) throws SQLException;
+
+    Student addStudent() throws SQLException;
 }
